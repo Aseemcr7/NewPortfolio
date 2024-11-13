@@ -91,13 +91,14 @@ const projects = [
 ];
 
 const Works = () => {
+  const isMObile = window.innerWidth < 768;
   return (
     <div  id="Project"
       style={{
         backgroundColor: "#16022e",
-        marginTop: "5rem",
-        marginLeft: "7pc",
-        padding: "2rem",
+        marginTop: isMObile ? "1pc" : "5rem",
+        marginLeft: isMObile ? "2pc" :"7pc",
+        padding: isMObile ? "2pc":"2rem",
       }}
       className="rounded col-10"
     >

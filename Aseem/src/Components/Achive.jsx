@@ -1,14 +1,15 @@
 import React from 'react'
 
+const isMobile = window.innerWidth < 768;
 const Achive = () => {
   return (
     <div>
         <div id="Achivements">
               <div className="card rounded col-10" style={{
         backgroundColor: "#120d18",
-        marginTop: "5rem",
-        marginLeft: "7pc",
-        padding: "2rem",
+        marginTop: isMobile ? "1pc":"5rem",
+        marginLeft: isMobile ? "2pc":"7pc",
+        padding: isMobile ? "2pc":"2rem",
       }}>
                 <div className=" card-header">
                   <a className="btn" data-bs-toggle='collapse' href="#Item1">
@@ -32,7 +33,7 @@ const Achive = () => {
                 </div>
                 <div className="card-header">
                   <a className="btn" data-bs-toggle='collapse' href="#Item3">
-                    <h3 style={{color:'#ac0dd4'}}>Digital Expo</h3>
+                    <h3 className='ps-3' style={{color:'#ac0dd4'}}>Digital Expo</h3>
                   </a>
                 </div>
                 <div id="Item3" className="collapse" data-bs-parent='#Achivements'>
