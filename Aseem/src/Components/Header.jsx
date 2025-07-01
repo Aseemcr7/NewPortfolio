@@ -38,7 +38,7 @@ const Header = () => {
           </a>
         </li>
         <li className='nav-item glow border-5 px-3'>
-          <a style={{ color: '#e6d8f8' }} className='nav-link fs-6' href='#Contact'>
+          <a style={{ color: '#e6d8f8' }} className='nav-link fs-6' href='#contact'>
             <FaIdCard className='me-2 fs-4 pb-1' /> CONTACT
           </a>
         </li>
